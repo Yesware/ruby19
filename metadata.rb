@@ -1,13 +1,13 @@
-maintainer        "Carlo Zottmann"
-maintainer_email  "carlo@zottmann.org"
-license           "WTFPL"
-description       "Installs Ruby 1.9 from source"
+maintainer        'Mike Karolow'
+maintainer_email  'mike@yesware.com'
+license           'WTFPL'
+description       'Installs Ruby 1.9 from source'
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.mdown'))
-version           "1.0"
-supports          "ubuntu"
+version           '1.1'
+supports          'ubuntu'
 
-%w( apt build-essential ).each do |d|
+recipe            'ruby19', 'Installs Ruby 1.9 from source.'
+
+%w{ apt build-essential }.each do |d|
   depends d
 end
-
-recipe            "ruby-1.9", "Installs Ruby 1.9 from source."
