@@ -1,0 +1,33 @@
+{
+  "name": "ruby19",
+  "description": "Installs Ruby 1.9 from source",
+  "long_description": "# ruby19 cookbook\n\nInstalls Ruby 1.9.x from source.\n\n\n## Cookbook Requirements\n\n* apt\n* build-essential\n\n\n## Attributes\n\n* `ruby/version`: string containing the ruby version you want to install.\n  Default: \"1.9.3-p194\"\n\n\n## Recipes\n\n* `ruby19`: installs Ruby from source.\n\n\n## Legal\n\n* Initially written by [Carlo Zottmann](http://github.com/carlo/)\n* Liability in case of anything: definitely not me.\n* License: [WTFPL](http://en.wikipedia.org/wiki/WTFPL).\n",
+  "maintainer": "Mike Karolow",
+  "maintainer_email": "mike@yesware.com",
+  "license": "WTFPL",
+  "platforms": {
+    "ubuntu": ">= 0.0.0"
+  },
+  "dependencies": {
+    "apt": ">= 0.0.0",
+    "build-essential": ">= 0.0.0"
+  },
+  "recommendations": {
+  },
+  "suggestions": {
+  },
+  "conflicting": {
+  },
+  "providing": {
+  },
+  "replacing": {
+  },
+  "attributes": {
+  },
+  "groupings": {
+  },
+  "recipes": {
+    "ruby19": "Installs Ruby 1.9 from source."
+  },
+  "version": "1.1.0"
+}
